@@ -5,6 +5,7 @@ from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 
+# kayıt olma fonksiyonu
 def userRegister(request):
     if request.method == 'POST':
         kullanici = request.POST['kullanici']
